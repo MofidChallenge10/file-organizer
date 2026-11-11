@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-organizer"
+version = "0.1.0"
+description = "Tiny zero-dependency CLI that organizes a messy folder by file type"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["cli", "files", "organizer", "downloads"]
+
+[project.scripts]
+file-organizer = "file_organizer:main"
+
+[tool.setuptools]
+py-modules = ["file_organizer"]
